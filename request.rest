@@ -1,0 +1,81 @@
+GET http://localhost:3031/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJFZ2FuIEpheWEiLCJlbWFpbCI6ImVnYW5qYXlhNzVAZ21haWwuY29tIiwiaWF0IjoxNjQzMTYyMTY4LCJleHAiOjE2NDMxNjIxODN9.gyHg-V2dbaTa1qLL8WGtmXS6lS7KiboSryhxHoP4EqY
+
+###
+POST http://localhost:3031/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0Mzg4MDE2OCwiZXhwIjoxNjQzODgwMTgzfQ.af45Hc_LY1ToaXisF8l1UT8NZ19JRaJRO6takvvurFU
+
+{
+    "name" : "local",
+    "email" : "local@gmail.com",
+    "password" : "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:3031/register
+Content-Type: application/json
+
+{
+    "name" : "Egan Jaya",
+    "email" : "eganjaya75@gmail.com",
+    "password" : "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:3031/login
+Content-Type: application/json
+
+{
+    "email" : "eganjaya@gmail.com",
+    "password" : "eganjaya"
+}
+
+###
+GET http://localhost:3031/token
+
+###
+GET http://localhost:3031/logout
+
+###
+POST http://localhost:3031/check-email
+Content-Type: application/json
+
+{
+    "email" : "eganjaya@gmail.com"
+}
+
+###
+GET http://localhost:3031/kursus
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0MzYxMDA4MCwiZXhwIjoxNjQzNjEwMTAwfQ.W0zxqtZbLMu9LvM8S-I8mklRwcKCFtGskHo38-WDt90
+
+###
+POST http://localhost:3031/kursus
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0MzYxMDk5NywiZXhwIjoxNjQzNjExMDE3fQ.B_cq23OC--Oz96NhqWmhouefD7vWny0zufjReblqMxc
+Content-Type: application/json
+
+{
+    "name" : "Kursus Belajara Bahasa Inggriss",
+    "info" : ""
+}
+
+###
+PUT http://localhost:3031/kursus/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0MzYxMDk5NywiZXhwIjoxNjQzNjExMDE3fQ.B_cq23OC--Oz96NhqWmhouefD7vWny0zufjReblqMxc
+Content-Type: application/json
+
+{
+    "name" : "Kursus Belajara Membaca Update",
+    "info" : "des update"
+}
+
+###
+DELETE http://localhost:3031/kursus/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0MzYxMDk5NywiZXhwIjoxNjQzNjExMDE3fQ.B_cq23OC--Oz96NhqWmhouefD7vWny0zufjReblqMxc
+
+# ========================for student=================
+###
+GET http://localhost:3031/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJlZ2FuIGpheWEiLCJlbWFpbCI6ImVnYW5qYXlhQGdtYWlsLmNvbSIsImlhdCI6MTY0MzYxMDA4MCwiZXhwIjoxNjQzNjEwMTAwfQ.W0zxqtZbLMu9LvM8S-I8mklRwcKCFtGskHo38-WDt90
